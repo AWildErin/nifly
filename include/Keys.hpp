@@ -103,5 +103,9 @@ public:
 		keys.clear();
 		numKeys = 0;
 	}
+
+	bool HasKey(const int id) {
+		return id >= 0 && id <= ( keys.size() - 1 );
+	}
 };
 } // namespace nifly
